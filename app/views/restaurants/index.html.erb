@@ -1,0 +1,28 @@
+<p style="color: blue"><%= notice %></p>
+
+<h1 class ="container">Restaurants</h1>
+
+
+<div id="restaurants" class ="container">
+  <% @restaurants.each do |restaurant| %>
+    <div id="<%= dom_id restaurant %>">
+      <p style="color: green"><%= notice %>
+        <strong>Name:</strong>
+        <%= restaurant.name %>
+      </p>
+      <p>
+        <strong>Category:</strong>
+        <%= restaurant.category %>
+      </p>
+      <p>
+        <strong>Address:</strong>
+        <%= restaurant.address %>
+      </p>
+      <p>
+        <strong>Phone Number:</strong>
+        <%= restaurant.phone_number %>
+
+      </p>
+    </div>
+  <% end %>
+</div>
