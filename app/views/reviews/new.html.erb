@@ -1,0 +1,8 @@
+<div class="container">
+<h1>Restaurant Reviews</h1>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <p><%= f.input :content %></p>
+  <p><%= f.input :rating, as: :numeric %></p>
+  <div class="btn btn-primary"><%= f.button :submit %></div>
+<% end %>
+</div>
